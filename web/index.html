@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" src="/eel.js"></script>
+        <script src="script.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <label for="url-input">Enter YouTube URL:</label>
+            <input type="text" id="url-input"/>
+            <button id="submit-button">Load video</button>
+        </div>
+        <div class="wrapper">
+            <div class="player-div" id="player"></div>
+            <div id="slider"></div>
+            <div id="time-selection" class="time-selection">
+                <span class="select-group">
+                    <label for="start-ts">Start time:</label>
+                    <input type="text" id="start-ts"/>
+                </span>
+                <span class="select-group">
+                    <label for="start-ts">End time:</label>
+                    <input type="text" id="end-ts"/>
+                </span>
+                <span class="select-group">
+                    <button id="preview-selection">Preview selection</button>
+                </span>
+                <span class="select-group">
+                    <button id="detect">Detect</button>
+                </span>
+            </div>
+            <div id="result" class="result">ssss</div>
+        </div>
+    </body>
+</html>
